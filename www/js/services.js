@@ -8,28 +8,28 @@ angular.module('starter.services', [])
     id: 0,
     name: 'Hectare 1',
     lastText: 'Working',
-    qntL: 25, //Variável contendo a quantidade de Litros utilizada pelo Hectare
+    qntL: 5 //Variável contendo a quantidade de Litros utilizada pelo Hectare
 
   }, {
     id: 1,
     name: 'Hectare 2',
     lastText: 'Working',
-    qntL: 40,
+    qntL: 40
   }, {
     id: 2,
     name: 'Hectare 3',
     lastText: 'Error',
-    qntL: 5,
+    qntL: 5
   }, {
     id: 3,
     name: 'Hectare 4',
     lastText: 'Working',
-    qntL: 90,
+    qntL: 90
   }, {
     id: 4,
     name: 'Hectare 5',
     lastText: 'Error',
-    qntL: 2,
+    qntL: 2
   }];
 
   return {
