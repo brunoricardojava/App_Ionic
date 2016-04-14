@@ -7,8 +7,27 @@
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
     <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+
+    <ion-list>
+
+      <ion-item>
+        <h2>Sensores ativos: {{chat.qntSensor}}</h2>
+        <!--<div style="float: right;">{{chat.qntSensor}}</div>-->
+      </ion-item>
+
+      <ion-item>
+        <h2>Quantidade de água: {{chat.qntL}}</h2>
+      </ion-item>
+
+      <ion-item>
+        <h2>Ultima irrigação: {{chat.lastIrrigation}}</h2>
+      </ion-item>
+
+      <ion-item>
+        <h2>Próxima irrigação: {{chat.nextIrrigation}}</h2>
+      </ion-item>
+
+    </ion-list>
+
   </ion-content>
 </ion-view>
