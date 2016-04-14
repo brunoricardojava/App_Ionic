@@ -6,29 +6,30 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Sensor 1',
+    name: 'Hectare 1',
     lastText: 'Working',
-    face: 'img/sensor.png'
+    qntL: 25, //Variável contendo a quantidade de Litros utilizada pelo Hectare
+
   }, {
     id: 1,
-    name: 'Sensor 2',
+    name: 'Hectare 2',
     lastText: 'Working',
-    face: 'img/sensor.png'
+    qntL: 40,
   }, {
     id: 2,
-    name: 'Sensor 3',
+    name: 'Hectare 3',
     lastText: 'Error',
-    face: 'img/sensor.png'
+    qntL: 5,
   }, {
     id: 3,
-    name: 'Sensor 4',
+    name: 'Hectare 4',
     lastText: 'Working',
-    face: 'img/sensor.png'
+    qntL: 90,
   }, {
     id: 4,
-    name: 'Sensor 5',
+    name: 'Hectare 5',
     lastText: 'Error',
-    face: 'img/sensor.png'
+    qntL: 2,
   }];
 
   return {
