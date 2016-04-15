@@ -12,6 +12,9 @@ angular.module('starter.services', [])
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
     nextIrrigation: '28/04/2016', //Contem a data da proxima irrigação a ser feita no hectare selecionado
+    luz: 200,  //Luminosidade media do ambiente
+    temp: 30,  //Temperatura do ambiente
+    umid: 23,  //Umidade do ambiente
 
   }, {
     id: 1,
@@ -21,6 +24,9 @@ angular.module('starter.services', [])
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
     nextIrrigation: '28/04/2016', //Contem a data da proxima irrigação a ser feita no hectare selecionado
+    luz: 200,  //Luminosidade media do ambiente
+    temp: 30,  //Temperatura do ambiente
+    umid: 23,  //Umidade do ambiente
   }, {
     id: 2,
     name: 'Hectare 3',
@@ -29,6 +35,9 @@ angular.module('starter.services', [])
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
     nextIrrigation: '28/04/2016', //Contem a data da proxima irrigação a ser feita no hectare selecionado
+    luz: 200,  //Luminosidade media do ambiente
+    temp: 30,  //Temperatura do ambiente
+    umid: 23,  //Umidade do ambiente
   }, {
     id: 3,
     name: 'Hectare 4',
@@ -37,6 +46,9 @@ angular.module('starter.services', [])
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
     nextIrrigation: '28/04/2016', //Contem a data da proxima irrigação a ser feita no hectare selecionado
+    luz: 200,  //Luminosidade media do ambiente
+    temp: 30,  //Temperatura do ambiente
+    umid: 23,  //Umidade do ambiente
   }, {
     id: 4,
     name: 'Hectare 5',
@@ -45,6 +57,9 @@ angular.module('starter.services', [])
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
     nextIrrigation: '28/04/2016', //Contem a data da proxima irrigação a ser feita no hectare selecionado
+    luz: 200,  //Luminosidade media do ambiente
+    temp: 30,  //Temperatura do ambiente
+    umid: 23,  //Umidade do ambiente
   }];
 
   return {
