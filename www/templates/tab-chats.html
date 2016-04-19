@@ -1,6 +1,6 @@
 <ion-view view-title="Sensors">
   <ion-content>
-    <ion-list>
+    <ion-list class="backgroundImage">
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
         <img ng-src="{{chat.qntL<20?'img/sensor-green.png':chat.qntL<50?'img/sensor-yellow.png':'img/sensor-red.png'}}">
         <div style="float: left;">

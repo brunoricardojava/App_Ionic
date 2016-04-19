@@ -1,1 +1,24 @@
-/* Empty. Add your own CSS if you like */
+.backgroundImage {
+	background-color: green;
+}
+
+.center {
+	text-align: center;
+}
+
+.text {
+	text-indent: 30px;
+	text-align: justify;
+}
+
+#logo {
+	width: 50%;
+	height: 50%;
+	text-align: center;
+
+}
+
+.colaborators {
+	width: 70%;
+	height: 70%;
+}
