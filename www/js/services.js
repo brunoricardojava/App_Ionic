@@ -7,7 +7,7 @@ angular.module('starter.services', [])
   var chats = [{
     id: 0,
     name: 'Hectare 1',
-    lastText: 'Working',
+    lastText: 'Attention',
     qntL: 25, //Variável contendo a quantidade de Litros utilizada pelo Hectare
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
@@ -19,7 +19,7 @@ angular.module('starter.services', [])
   }, {
     id: 1,
     name: 'Hectare 2',
-    lastText: 'Working',
+    lastText: 'Attention',
     qntL: 40,
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
@@ -30,7 +30,7 @@ angular.module('starter.services', [])
   }, {
     id: 2,
     name: 'Hectare 3',
-    lastText: 'Error',
+    lastText: 'Working',
     qntL: 5,
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
@@ -41,7 +41,7 @@ angular.module('starter.services', [])
   }, {
     id: 3,
     name: 'Hectare 4',
-    lastText: 'Working',
+    lastText: 'Critical',
     qntL: 90,
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
@@ -52,7 +52,7 @@ angular.module('starter.services', [])
   }, {
     id: 4,
     name: 'Hectare 5',
-    lastText: 'Error',
+    lastText: 'Working',
     qntL: 2,
     qntSensor: 9, //Contem o numero de sensores ativos no hectare selecionado
     lastIrrigation: '10/04/2016', //Contem a data da ultima irrigação feita no hectare selecionado
