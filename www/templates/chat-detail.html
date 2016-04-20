@@ -7,18 +7,21 @@
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
 
-    
-
-
-    <div class="row">
-
-      <!--Grid-->
-      <div class="col col-30">
-      <img ng-src="{{chat.qntL<20?'img/sensor-green.png':chat.qntL<50?'img/sensor-yellow.png':'img/sensor-red.png'}}" style="width: 64px; height: 64px">
-      </div>
-
-      <div class="col"><h2>{{chat.qntL<20?'Tudo certo!':chat.qntL<50?'Atenção!':'Perigo!'}}</h2></div>
-
+    <div class="card">
+      
+      <a class="item item-avatar">
+          <img ng-src="{{chat.qntL<20?'img/sensor-green.png':chat.qntL<50?'img/sensor-yellow.png':'img/sensor-red.png'}}" style="width: 64px; height: 64px">
+          <h2>
+            {{chat.qntL<20?'Sistema OK':chat.qntL<50?'Verificar irrigação':'Perigo'}}
+          </h2>
+          <p>
+            {{
+            chat.qntL<20?'Esse hectar está com bons niveis de água.':
+            chat.qntL<50?'Marque a próxima irrigação do hectar.':
+            'Faça a irrigação o quanto antes!!!'
+            }}
+          </p>
+        </a>
     </div>
 
     <div class="row">
@@ -27,6 +30,7 @@
           labels="labels" legend="true" series="series" colours="colours">
         </canvas>
     </div>
+
 
     <ion-list>
 
