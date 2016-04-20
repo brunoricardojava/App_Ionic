@@ -1,24 +1,16 @@
-angular.module('starter.controllers', ['chart.js'])
+angular.module('ionicApp', ['ionic','chart.js'])
 
-.controller('DashCtrl', function($scope) {})
+.controller('GraphCtrl', function($scope) {
+  /*$scope.graph = {};
+  $scope.graph.data = [
+    //Awake
+    [16, 15, 20, 12, 16, 12, 8],
+    //Asleep
+    [8, 9, 4, 12, 8, 12, 14]
+  ];
+  $scope.graph.labels = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  $scope.graph.series = ['Awake', 'Asleep'];*/
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-})
-
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
   $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
   $scope.series = ['Series A', 'Series B'];
   $scope.data = [
@@ -30,14 +22,14 @@ angular.module('starter.controllers', ['chart.js'])
     strokeColor: 'rgba(47, 132, 71, 0.8)',
     highlightFill: 'rgba(47, 132, 71, 0.8)',
     highlightStroke: 'rgba(47, 132, 71, 0.8)'
-  }];
-})
-
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+}];
 });
+
+
+
+
+
+
 
 
 //Import Angular-chart.js

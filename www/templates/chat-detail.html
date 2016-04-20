@@ -7,6 +7,9 @@
 <ion-view view-title="{{chat.name}}">
   <ion-content class="padding">
 
+    
+
+
     <div class="row">
 
       <!--Grid-->
@@ -16,6 +19,13 @@
 
       <div class="col"><h2>{{chat.qntL<20?'Tudo certo!':chat.qntL<50?'Atenção!':'Perigo!'}}</h2></div>
 
+    </div>
+
+    <div class="row">
+        <!--Chart-->
+        <canvas id="line" class="chart chart-line" data="data"
+          labels="labels" legend="true" series="series" colours="colours">
+        </canvas>
     </div>
 
     <ion-list>
