@@ -12,13 +12,13 @@
       <a class="item item-avatar">
           <img ng-src="{{chat.qntL<20?'img/sensor-green.png':chat.qntL<50?'img/sensor-yellow.png':'img/sensor-red.png'}}" style="width: 64px; height: 64px">
           <h2>
-            {{chat.qntL<20?'Sistema OK':chat.qntL<50?'Verificar irrigação':'Perigo'}}
+            {{chat.qntL<20?'System OK':chat.qntL<50?'Check Irrigation':'Warning'}}
           </h2>
           <p>
             {{
-            chat.qntL<20?'Tudo certo com os níveis de água.':
-            chat.qntL<50?'Marque a próxima irrigação!':
-            'Nível critico de água!!!'
+            chat.qntL<20?'All right with the water levels.':
+            chat.qntL<50?'Check the next irrigation!':
+            'Critical water level!!!'
             }}
           </p>
         </a>
@@ -33,39 +33,38 @@
 
       <div class="item item-icon-left">
         <i class="icon ion-eye"></i>
-          Sensores Ativos : <span style="float: right;">{{chat.qntSensor}}</span>
+          Active Sensors : <span style="float: right;">{{chat.qntSensor}}</span>
       </div>   
       
       <div class="item item-icon-left">
         <i class="icon ion-waterdrop"></i>
-          Quantidade de Água : <span style="float: right;">{{chat.qntL}}</span>
+          Water Quantity : <span style="float: right;">{{chat.qntL}}</span>
       </div> 
 
       <div class="item item-icon-left">
         <i class="icon ion-android-sunny"></i>
-          Luminosidade : <span style="float: right;">{{chat.luz}}</span>
+          Luminosity: <span style="float: right;">{{chat.luz}}</span>
       </div> 
 
       <div class="item item-icon-left">
         <i class="icon ion-thermometer"></i>
-          Temperatura : <span style="float: right;">{{chat.temp}}</span>
+          Temperature : <span style="float: right;">{{chat.temp}}</span>
       </div>
 
       <div class="item item-icon-left">
         <i class="icon ion-ios-cloud"></i>
-          Umidade : <span style="float: right;">{{chat.umid}}</span>
+          Humidity : <span style="float: right;">{{chat.umid}}</span>
       </div>
 
       <div class="item item-icon-left">
         <i class="icon ion-ios-calendar"></i>
-          Ultima Irrigação : <span style="float: right;">{{chat.lastIrrigation}}</span>
+          Last Irrigation : <span style="float: right;">{{chat.lastIrrigation}}</span>
       </div>
 
       <div class="item item-icon-left">
         <i class="icon ion-ios-calendar-outline"></i>
-          Próxima Irrigação : <span style="float: right;">{{chat.nextIrrigation}}</span>
+          Next Irrigation : <span style="float: right;">{{chat.nextIrrigation}}</span>
       </div>
-
     </div>
 
   </ion-content>
