@@ -20,7 +20,7 @@ angular.module('starter.controllers', ['chart.js'])
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
   $scope.labels = ["11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00"];
-  $scope.series = ['Sensor 1', 'Sensor 2'];
+  $scope.series = ['Água', 'Humidity'];
   $scope.data = [
     [65, 59, 80, 81, 56, 55, 40],
     [28, 48, 40, 19, 86, 27, 90]
